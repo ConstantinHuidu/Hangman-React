@@ -1,6 +1,47 @@
+body {
+  background-color: aliceblue ;
+}
+
+
 .App {
   text-align: center;
 }
+
+h1, h3 {
+  text-align: center;
+}
+
+.add-word {
+  display: grid;
+  place-items: center;
+  grid-gap: 10px;
+}
+
+.hidden-word , .notifications, .replay-btn-container{
+  display: grid;
+  place-items: center;
+  margin: 12px;
+}
+
+.replay-btn {
+  visibility: hidden;
+}
+
+
+.keyboard-container {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 3px;
+
+  /* grid-auto-rows: auto; */
+}
+
 
 .App-logo {
   height: 40vmin;

@@ -15,20 +15,12 @@ function App() {
       );
   }
 
-//   const hiddenWord = useCallback(() => {
-//     // console.log(props.guessedLetters)
-//     return newWord.toUpperCase().split("").map(
-//       letter => (guessedLetters.includes(letter) ? letter : " _ ")
-//       );
-//  }, [guessedLetters, newWord])
-
   return (
     <>
       <div>
         <h1>HANGMAN</h1>
         <AddWord 
           newWord = { newWord } setNewWord = { setNewWord }
-          guessedLetters = { guessedLetters } setGuessedLetters = { setGuessedLetters }
           hiddenWord = { hiddenWord }
         />
         <Keyboard 
